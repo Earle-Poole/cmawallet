@@ -2,7 +2,7 @@ import React from 'react';
 
 const LEOMilitary = () => {
     return (
-        <div className='mw8 f5 f4-l center tl'>
+        <div className='mw8 f5 f4-l center tl ph3'>
             Government Agencies: If you are a law enforcement officer, Military Member or government services professional 
             (See the list below). There will be an additional $10.00 off the purchase price.  This will need to be verified 
             via an email with proof of service, such as an ID card.  Please email questions@cmawallets.com with a copy of 

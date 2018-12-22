@@ -4,6 +4,7 @@ import Logo from './components/Logo/Logo'
 import Home from './components/Home/Home'
 import Popup from './components/Popup/Popup';
 import LEOMilitary from './components/LEOMilitary/LEOMilitary';
+import SafetyUse from './components/SafetyUse/SafetyUse';
 import './App.css';
 import 'tachyons';
 
@@ -35,7 +36,12 @@ class App extends Component {
         ( route === 'leomilitary'
         ? <div>
           <LEOMilitary />
-          </div> : <div> </div>)
+          </div> : 
+        ( route === 'safetyuse'
+        ? <div>
+          <SafetyUse />
+          </div> : <div></div>
+        ))
         }
       </div>
     );
