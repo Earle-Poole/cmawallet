@@ -3,11 +3,12 @@ import Navigation from './components/Navigation/Navigation'
 import Logo from './components/Logo/Logo'
 import Home from './components/Home/Home'
 import Popup from './components/Popup/Popup';
+import LEOMilitary from './components/LEOMilitary/LEOMilitary';
 import './App.css';
 import 'tachyons';
 
 const initialState = {
-  route: 'home',
+  route: 'leomilitary',
 }
 
 class App extends Component {
@@ -27,13 +28,15 @@ class App extends Component {
         <Logo />
         <Navigation onRouteChange={this.onRouteChange}/> 
         { route === 'home'
-      ? <div>
-        <Popup />
-        <Home />
-      </div> :
-        <div>
-
-        </div> }
+        ? <div>
+          <Popup />
+          <Home />
+          </div> :
+        ( route === 'leomilitary'
+        ? <div>
+          <LEOMilitary />
+          </div> : <div> </div>)
+        }
       </div>
     );
   }
