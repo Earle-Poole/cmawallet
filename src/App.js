@@ -8,7 +8,7 @@ import './App.css';
 import 'tachyons';
 
 const initialState = {
-  route: 'leomilitary',
+  route: 'home',
 }
 
 class App extends Component {
