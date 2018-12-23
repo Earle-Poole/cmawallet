@@ -12,10 +12,12 @@ const SafetyUse = () => {
                 height="480px" 
                 title="CMAWallets, LLC" 
                 src="https://www.youtube.com/embed/5XZPO3oE0MY?rel=0" 
-                frameborder="0" 
+                frameBorder="0" 
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen/>
+                allowFullScreen/>
             </div>
+            <p className="f6 i">Thanks to <a href="http://www.g2grange.com/" className="black pointer">G2G Shooting Range</a> in Rosenberg, TX for allowing us to record this video in their facility.</p>
+            <p className="f6 i">Special thanks to Sky Productions for the creation of this video.</p>
         </div>
     )
 }

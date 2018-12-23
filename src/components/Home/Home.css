@@ -4,8 +4,13 @@
     width: 120px
 }
 
+.image-gallery-slide-wrapper {
+    box-shadow: 3px 3px 10px 0px black;
+    margin-bottom: 1rem
+}
 
 .image-gallery-thumbnail img{
     height: 60px;
     width: auto;
+    box-shadow: 1px 1px 4px black
 }

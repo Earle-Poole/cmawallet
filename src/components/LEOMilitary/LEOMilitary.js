@@ -10,15 +10,17 @@ const LEOMilitary = () => {
             We will then issue a $10 refund.
             <br />
             <br />
-            <ul className='tl'>
-                <li className='pb3'>Law Enforcement Officers/ Corrections Officers: Active or Retired- Must provide a sanitized* copy of LE Picture ID</li>
-                <li className='pb3'>Law Enforcement Cadets- Sanitized* documentation of Academy Enrollment</li>
-                <li className='pb3'>Military Personnel: Active, Reserve, Guard, Retired- Must provide a sanitized* copy of Military Picture ID, Drivers License with the word Veteran on it, or DD214</li>
-                <li className='pb3'>Court Judges- Must provide a sanitized* copy of your Department ID</li>
-                <li className='pb3'>Fire Fighters, EMT's & Paramedics: Paid & Volunteer- Must provide a sanitized* copy of your Department ID</li>
-                <li className='pb3'>State Licensed Security Companies- Must provide a sanitized* copy of your Department ID.</li>
+            <ul className='tl f5 f4-l'>
+                <li className='pb3'>Law Enforcement Officers/ Corrections Officers: Active or Retired - Must provide a sanitized¹ copy of LE Picture ID</li>
+                <li className='pb3'>Law Enforcement Cadets - Sanitized¹ documentation of Academy Enrollment</li>
+                <li className='pb3'>Military Personnel: Active, Reserve, Guard, Retired - Must provide a sanitized¹ copy of Military Picture ID, Drivers License with the word Veteran on it, or DD214</li>
+                <li className='pb3'>Court Judges - Must provide a sanitized¹ copy of your Department ID</li>
+                <li className='pb3'>Fire Fighters, EMT's & Paramedics: Paid & Volunteer - Must provide a sanitized¹ copy of your Department ID</li>
+                <li className='pb3'>State Licensed Security Companies - Must provide a sanitized¹ copy of your Department ID.</li>
             </ul>
-            *Sanitized means that you do not send any personal information to include, but not limited to Social Security, Address, Employee ID, etc.  We basically just need to see your name, your picture and the organizations name on the card.
+            <div className="f7 f6-l i">
+                ¹Sanitized means that you do not send any personal information to include, but not limited to Social Security, Address, Employee ID, etc.  We basically just need to see your name, your picture and the organizations name on the card.
+            </div>
         </div>
     )
 }

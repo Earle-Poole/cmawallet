@@ -2,10 +2,16 @@ import React from "react";
 import Popup from "reactjs-popup";
 import './Popup.css'
 
-var onePopup = 0;
+//Start with popup showing
+var cancelledPopup = 0;
+//Check if email has been submitted
+var submittedPopup = window.localStorage.getItem("submittedPopup")
+//If email has never been submitted, show popup
+if(submittedPopup === null ){window.localStorage.setItem("submittedPopup", "0")};
 
 const emailPopup = () => {
-    if(onePopup === 0){
+    //Check if popup has been cancelled this session, or if email has ever been submitted
+    if(cancelledPopup === 0 && submittedPopup === "0"){
         return (
             <Popup defaultOpen={true}
                 style={{width: '350px'}} 
@@ -22,20 +28,21 @@ const emailPopup = () => {
                             </div>
                             <input style={{width: '19rem', height: '2rem'}} type="email" placeholder="Email Address"/>
                             <div className="actions flex justify-between">
-                            <Popup
-                                trigger={<button className="button ma3" onClick={onePopup++}> Submit </button>}
-                                position="top center"
-                                closeOnDocumentClick
-                            >
-                            <span>
-                                Words
-                            </span>
-                            </Popup>
+                            <button 
+                                className="button ma3" 
+                                onClick={() => {
+                                    //If email is submitted, prevent popup from showing again (unless cache/storage is cleared)
+                                    window.localStorage.setItem("submittedPopup", "1")
+                                    cancelledPopup++
+                                    close();
+                                }}
+                                > Submit 
+                            </button>
                             <button
                                 className="button ma3"
                                 onClick={() => {
                                 close();
-                                onePopup++
+                                cancelledPopup++
                                 }}
                             >
                             Close

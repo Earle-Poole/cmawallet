@@ -10,24 +10,20 @@ const Home = () => {
     const images = [
         {original: GunWallet1,
         thumbnail: GunWallet1,
-        description: "CMA Wallets",
         originalAlt: "CMAWallet Logo | Concealed Wallet Holster | Gun | Firearm | Holster"},
         {original: GunWallet2,
         thumbnail: GunWallet2,
-        description: "CMA Wallets",
         originalAlt: "CMAWallet Logo | Concealed Wallet Holster | Gun | Firearm | Holster"},
         {original: GunWallet3,
         thumbnail: GunWallet3,
-        description: "CMA Wallets",
         originalAlt: "CMAWallet Logo | Concealed Wallet Holster | Gun | Firearm | Holster"},
         {original: GunWallet4,
         thumbnail: GunWallet4,
-        description: "CMA Wallets",
         originalAlt: "CMAWallet Logo | Concealed Wallet Holster | Gun | Firearm | Holster"}
     ]
 
     return (
-        <div style={{ width: '65%', height: 'auto', }} className='center'>
+        <div style={{ width: '64%', height: 'auto', }} className='center'>
             <ImageGallery 
             items={images} 
             showFullscreenButton={false}

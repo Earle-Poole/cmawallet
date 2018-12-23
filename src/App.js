@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
-import Navigation from './components/Navigation/Navigation'
-import Logo from './components/Logo/Logo'
-import Home from './components/Home/Home'
+import Navigation from './components/Navigation/Navigation';
+import BottomNavigation from './components/BottomNavigation/BottomNavigation'
+import Logo from './components/Logo/Logo';
+import Home from './components/Home/Home';
 import Popup from './components/Popup/Popup';
 import LEOMilitary from './components/LEOMilitary/LEOMilitary';
 import SafetyUse from './components/SafetyUse/SafetyUse';
+import ProductDesign from './components/ProductDesign/ProductDesign';
 import './App.css';
 import 'tachyons';
 
@@ -40,9 +42,14 @@ class App extends Component {
         ( route === 'safetyuse'
         ? <div>
           <SafetyUse />
-          </div> : <div></div>
+          </div> : 
+        ( route === 'productdesign'
+        ? <div>
+          <ProductDesign onRouteChange={this.onRouteChange}/>
+          </div> : <div></div> )
         ))
         }
+        <BottomNavigation onRouteChange={this.onRouteChange}/>
       </div>
     );
   }
