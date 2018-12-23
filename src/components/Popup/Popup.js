@@ -9,6 +9,8 @@ var submittedPopup = window.localStorage.getItem("submittedPopup")
 //If email has never been submitted, show popup
 if(submittedPopup === null ){window.localStorage.setItem("submittedPopup", "0")};
 
+submittedPopup = window.localStorage.getItem("submittedPopup");
+
 const emailPopup = () => {
     //Check if popup has been cancelled this session, or if email has ever been submitted
     if(cancelledPopup === 0 && submittedPopup === "0"){
