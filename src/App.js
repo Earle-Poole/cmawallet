@@ -14,7 +14,7 @@ import './App.css';
 import 'tachyons';
 
 const initialState = {
-  route: 'termsandconditions',
+  route: 'homeg',
 }
 
 class App extends Component {
