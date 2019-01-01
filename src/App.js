@@ -7,11 +7,14 @@ import Popup from './components/Popup/Popup';
 import LEOMilitary from './components/LEOMilitary/LEOMilitary';
 import SafetyUse from './components/SafetyUse/SafetyUse';
 import ProductDesign from './components/ProductDesign/ProductDesign';
+import FormsLinks from './components/FormsLinks/FormsLinks';
+import WhereToBuy from './components/WhereToBuy/WhereToBuy';
+import TermsAndConditions from './components/TermsConditions/TermsAndConditions';
 import './App.css';
 import 'tachyons';
 
 const initialState = {
-  route: 'home',
+  route: 'termsandconditions',
 }
 
 class App extends Component {
@@ -46,8 +49,20 @@ class App extends Component {
         ( route === 'productdesign'
         ? <div>
           <ProductDesign onRouteChange={this.onRouteChange}/>
-          </div> : <div></div> )
-        ))
+          </div> : 
+        ( route === 'formslinks' 
+        ? <div>
+          <FormsLinks />
+          </div> : 
+        ( route === 'wheretobuy' 
+        ? <div>
+          <WhereToBuy />
+          </div> : 
+        ( route === 'termsandconditions'
+        ? <div>
+          <TermsAndConditions />
+          </div> : <div></div>
+        ))))))
         }
         <BottomNavigation onRouteChange={this.onRouteChange}/>
       </div>

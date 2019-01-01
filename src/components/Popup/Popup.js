@@ -4,11 +4,11 @@ import './Popup.css'
 
 //Start with popup showing
 var cancelledPopup = 0;
-//Check if email has been submitted
+//Check if email has been submitted from previous visits
 var submittedPopup = window.localStorage.getItem("submittedPopup")
 //If email has never been submitted, show popup
 if(submittedPopup === null ){window.localStorage.setItem("submittedPopup", "0")};
-
+//If this is the first visit set submittedPopup to 0
 submittedPopup = window.localStorage.getItem("submittedPopup");
 
 const emailPopup = () => {

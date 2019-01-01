@@ -17,7 +17,7 @@ const ProductDesign = ({ onRouteChange }) => {
                     Please understand that we at CMA Wallets feel it is more important to ensure smooth, unhindered operation of the firearm rather 
                     than visual aesthetics.
                     </p>
-                    <p className="f7 f8-l pt0 i">
+                    <p className="f8 f7-l pt0 i">
                     If your Curveball Wallet Holster has seam separation, please review the warranty section of the <button 
                     className="pointer b link underline tnc" 
                     onClick={() => onRouteChange('termsandconditions')}>
