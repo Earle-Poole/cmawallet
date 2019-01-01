@@ -3,7 +3,7 @@ import './ProductDesign.css';
 
 const ProductDesign = ({ onRouteChange }) => {
     return(
-        <div className="mw7 tj center">
+        <div className="mw7 tj f6 f5-l center">
             <ol>
                 <li>
                     Materials - The Curveball Wallet Holster’s outer shell is made of real leather. The inner shell is a smooth plastic to help 
