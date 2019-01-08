@@ -42,7 +42,7 @@ class App extends Component {
         { route === 'home'
         ? <div>
           <Popup />
-          <Home />
+          <Home onRouteChange={this.onRouteChange}/>
           </div> :
         ( route === 'leomilitary')
         ? <div>

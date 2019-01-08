@@ -6,7 +6,7 @@ import GunWallet2 from '../../Images/GunWallet2.png';
 import GunWallet3 from '../../Images/GunWallet3.png';
 import GunWallet4 from '../../Images/GunWallet4.png';
 
-const Home = () => {
+const Home = ({ onRouteChange }) => {
     const images = [
         {original: GunWallet1,
         thumbnail: GunWallet1,
@@ -23,13 +23,14 @@ const Home = () => {
     ]
 
     return (
-        <div style={{ width: '64%', height: 'auto', }} className='center'>
+        <div style={{ width: '45%', height: 'auto', }} className='center'>
             <ImageGallery 
             items={images} 
             showFullscreenButton={false}
             autoPlay={true}
             slideDuration={700}
             lazyLoad={false}
+            onClick={() => onRouteChange('wheretobuy')}
             />
         </div>
     )

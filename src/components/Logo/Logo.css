@@ -2,3 +2,8 @@
     padding-top: 2rem;
     padding-bottom: 1rem;
 }
+
+#logo-bg {
+    /* background: linear-gradient(to right, #eef2f3 0%, #8592be 30%, #8592be 70%, #eef2f3 100%); */
+    background: #a8c0ff
+}

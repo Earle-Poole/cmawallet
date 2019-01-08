@@ -18,7 +18,7 @@ const Scenarios = () => {
                 For them, and unknowingly to them, the slower you move the better it is for you.  It wont appear that 
                 you are going for a weapon, when the holster and weapon are slowly drawn out to allow you to discharge 
                 the weapon, they will have it in their mind that you are giving them a wallet, but instead you are 
-                throwing them a Curveball
+                throwing them a Curveball.
             </div>
         </div>
     )

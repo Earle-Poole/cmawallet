@@ -4,8 +4,8 @@ import logo from '../../Images/CMAlogo.png'
 
 const Logo = () => {
     return (
-        <div>
-            <img className="logo" alt='CMAWallet Logo | Concealed Wallet Holster | Gun | Firearm | Holster' src={logo}/>
+        <div id='logo-bg'>
+            <img className="logo" id='logo' alt='CMAWallet Logo | Concealed Wallet Holster | Gun | Firearm | Holster' src={logo}/>
         </div>
     )
 }
