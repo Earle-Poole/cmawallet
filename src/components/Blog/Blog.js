@@ -2,18 +2,10 @@ import React from 'react';
 
 const Blog = () => {
     return(
-        <div className='flex tj f7 f6-l flex-column center mw7'>
-            <p>
-                This page would be regularly updated with buzzword-filled relevant blog posts. 
+        <div className='flex tj f4 f5-l flex-column mw7'>
+            <p className='tj f2 f3-l center'>
+                Check back again later, our blog is coming online very soon!
             </p>
-            <p>
-                Similar pages:
-            </p>
-            <ul>
-                <li>
-                    https://blog.beretta.com/how-to-carry-a-concealed-firearm-with-confidence
-                </li>
-            </ul>
         </div>
     )
 }

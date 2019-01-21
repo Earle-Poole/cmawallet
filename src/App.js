@@ -16,9 +16,6 @@ import Blog from './components/Blog/Blog';
 import './App.css';
 import 'tachyons';
 
-// TO-DO: Add link to email in LEOMilitary
-
-
 const initialState = {
 	route: 'home',
 	input: '',
@@ -31,17 +28,17 @@ class App extends Component {
 		this.state = initialState;
 	}
 
-	onInputChange(event) {
+	onInputChange = (event) => {
 		this.setState({ input: event.target.value });
 	}
 
-	onRouteChange(route) {
-		this.setState({ route });
+	onRouteChange = (input) => {
+		this.setState({ route: input });
 	}
 
 	onEmailSubmit() {
 		const { input } = this.state;
-		fetch('http://localhost:3000/database', {
+		fetch('http://localhost:3306/database', {
 			method: 'post',
 			headers: {'Content-Type': 'application/json'},
 			body: JSON.stringify({
