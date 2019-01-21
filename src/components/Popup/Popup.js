@@ -11,7 +11,7 @@ if(submittedPopup === null ){window.localStorage.setItem("submittedPopup", "0")}
 //If this is the first visit set submittedPopup to 0
 submittedPopup = window.localStorage.getItem("submittedPopup");
 
-const emailPopup = () => {
+const emailPopup = ({ onInputChange, onEmailSubmit }) => {
     //Check if popup has been cancelled this session, or if email has ever been submitted
     if(cancelledPopup === 0 && submittedPopup === "0"){
         return (
@@ -28,14 +28,15 @@ const emailPopup = () => {
                                 If you provide us with your email address we will contact you with discounts, and updates
                                 regarding the stores you can find our product.
                             </div>
-                            <input style={{width: '19rem', height: '2rem'}} type="email" placeholder="Email Address"/>
+                            <input style={{width: '19rem', height: '2rem'}} type="email" placeholder="Email Address" onChange={onInputChange} />
                             <div className="actions flex justify-between">
                             <button 
                                 className="button ma3" 
                                 onClick={() => {
                                     //If email is submitted, prevent popup from showing again (unless cache/storage is cleared)
-                                    window.localStorage.setItem("submittedPopup", "1")
-                                    cancelledPopup++
+                                    window.localStorage.setItem("submittedPopup", "1");
+                                    onEmailSubmit();
+                                    cancelledPopup++;
                                     close();
                                 }}
                                 > Submit 
@@ -44,7 +45,7 @@ const emailPopup = () => {
                                 className="button ma3"
                                 onClick={() => {
                                 close();
-                                cancelledPopup++
+                                cancelledPopup++;
                                 }}
                             >
                             Close
@@ -57,6 +58,6 @@ const emailPopup = () => {
     } else {
         return null
     }
-}
+};
 
 export default emailPopup;

@@ -16,76 +16,96 @@ import Blog from './components/Blog/Blog';
 import './App.css';
 import 'tachyons';
 
-//TO-DO: Add link to email in LEOMilitary
+// TO-DO: Add link to email in LEOMilitary
 
 
 const initialState = {
-  route: 'home',
-}
+	route: 'home',
+	input: '',
+};
+
 
 class App extends Component {
-  constructor(){
-    super();
-    this.state = initialState;
-  }
+	constructor() {
+		super();
+		this.state = initialState;
+	}
 
-  onRouteChange = (route) => {
-    this.setState({route: route})
-  }
-  
-  render() {
-    const { route } = this.state;
-    return (
-      <div className="App">
-        <Logo />
-        <Navigation onRouteChange={this.onRouteChange}/> 
-        { route === 'home'
-        ? <div>
-          <Popup />
-          <Home onRouteChange={this.onRouteChange}/>
-          </div> :
-        ( route === 'leomilitary')
-        ? <div>
-          <LEOMilitary />
-          </div> : 
-        ( route === 'safetyuse')
-        ? <div>
-          <SafetyUse />
-          </div> : 
-        ( route === 'productdesign')
-        ? <div>
-          <ProductDesign onRouteChange={this.onRouteChange}/>
-          </div> : 
-        ( route === 'formslinks') 
-        ? <div>
-          <FormsLinks />
-          </div> : 
-        ( route === 'wheretobuy') 
-        ? <div>
-          <WhereToBuy />
-          </div> : 
-        ( route === 'termsandconditions'
-        ? <div>
-          <TermsAndConditions />
-          </div> : 
-        ( route === 'contactus')
-        ? <div>
-          <ContactUs />
-          </div> : 
-        ( route === 'scenarios')
-        ? <div>
-          <Scenarios />
-          </div> : 
-        ( route ==='blog')
-        ? <div>
-          <Blog />
-          </div> : <div></div>
-        )
-        }
-        <BottomNavigation onRouteChange={this.onRouteChange}/>
-      </div>
-    );
-  }
+	onInputChange(event) {
+		this.setState({ input: event.target.value });
+	}
+
+	onRouteChange(route) {
+		this.setState({ route });
+	}
+
+	onEmailSubmit() {
+		const { input } = this.state;
+		fetch('http://localhost:3000/database', {
+			method: 'post',
+			headers: {'Content-Type': 'application/json'},
+			body: JSON.stringify({
+				email: input,
+			}),
+		});
+	}
+
+	render() {
+		const { route } = this.state;
+		return (
+			<div className="App">
+				<Logo />
+				<Navigation onRouteChange={this.onRouteChange}/> 
+				{ route === 'home'
+				? <div>
+					<Popup 
+						onInputChange={this.onInputChange}
+						onEmailSubmit={this.onEmailSubmit}
+					/>
+					<Home onRouteChange={this.onRouteChange}/>
+					</div> :
+				( route === 'leomilitary')
+				? <div>
+					<LEOMilitary />
+					</div> : 
+				( route === 'safetyuse')
+				? <div>
+					<SafetyUse />
+					</div> : 
+				( route === 'productdesign')
+				? <div>
+					<ProductDesign onRouteChange={this.onRouteChange}/>
+					</div> : 
+				( route === 'formslinks') 
+				? <div>
+					<FormsLinks />
+					</div> : 
+				( route === 'wheretobuy') 
+				? <div>
+					<WhereToBuy />
+					</div> : 
+				( route === 'termsandconditions'
+				? <div>
+					<TermsAndConditions />
+					</div> : 
+				( route === 'contactus')
+				? <div>
+					<ContactUs />
+					</div> : 
+				( route === 'scenarios')
+				? <div>
+					<Scenarios />
+					</div> : 
+				( route ==='blog')
+				? <div>
+					<Blog />
+					</div> : <div></div>
+				)
+				}
+				<BottomNavigation onRouteChange={this.onRouteChange}/>
+			</div>
+		);
+	}
 }
 
 export default App;

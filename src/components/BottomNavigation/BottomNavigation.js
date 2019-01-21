@@ -14,7 +14,7 @@ const BottomNavigation = ({onRouteChange}) => {
                 </nav>
             </div>
             <div className='ma3 f7 f6-m f5-l black i'>
-                <p>Copyright © 2018 CMA Wallets, LLC</p>
+                <p>Copyright © 2019 CMA Wallets, LLC</p>
                 <p>Website by <a target="_blank" rel="noopener noreferrer" href='https://github.com/Earle-Poole#'><span className='black underline grow'>Earle Poole</span></a>.</p>
             </div>
         </div>
