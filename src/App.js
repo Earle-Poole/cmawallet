@@ -16,39 +16,42 @@ import Blog from './components/Blog/Blog';
 import './App.css';
 import 'tachyons';
 
-const initialState = {
-	route: 'home',
-	input: '',
-};
-
-
 class App extends Component {
-	constructor() {
-		super();
-		this.state = initialState;
-	}
+		state = {
+			initialState: {
+				route: 'home',
+				input: '',
+			}
+		};
 
 	onInputChange = (event) => {
 		this.setState({ input: event.target.value });
 	}
 
 	onRouteChange = (input) => {
-		this.setState({ route: input });
+		this.setState({ initialState: {route: input} });
 	}
 
-	onEmailSubmit() {
-		const { input } = this.state;
-		fetch('http://localhost:3306/database', {
+	onEmailSubmit = () => {
+		fetch('http://cmawallet.com', {
 			method: 'post',
 			headers: {'Content-Type': 'application/json'},
 			body: JSON.stringify({
-				email: input,
+				email: this.state.input,
 			}),
-		});
+		})
+		.then(function(response){
+			if(response){
+				console.log(response);
+			}
+		})
+		.catch((error) => {
+			console.log(`I don't feel so good: \n`, error);
+		})
 	}
 
 	render() {
-		const { route } = this.state;
+		const { route } = this.state.initialState;
 		return (
 			<div className="App">
 				<Logo />
