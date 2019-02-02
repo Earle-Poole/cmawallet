@@ -11,7 +11,11 @@ body {
   background-repeat: initial;
   height: 100%;
   width: 100%;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+  overflow-y: scroll;
 }
+
 
 
 code {

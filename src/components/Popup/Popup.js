@@ -5,7 +5,6 @@ import Popup from 'reactjs-popup';
 import MailchimpSubscribe from 'react-mailchimp-subscribe';
 import './Popup.css';
 
-
 // Start with popup showing
 let cancelledPopup = 0;
 // Check if email has been submitted from previous visits
@@ -44,7 +43,7 @@ const emailPopup = () => {
 							{'If you provide us with your email address we will contact you with discounts, and updates regarding the stores you can find our product.'}
 						</div>
 						<div
-							onKeyPress={() => {}}
+							onKeyPress={() => null}
 							tabIndex={0}
 							className="ma2"
 							role="button"
