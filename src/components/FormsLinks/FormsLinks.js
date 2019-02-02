@@ -2,6 +2,19 @@
 import React from 'react';
 import ATFFormThumbnail from '../../Images/ATF Form 1 thumbnail.png';
 import ATFFormPDF from '../../Documents/ATF Form 1 Tips.pdf';
+import LCP1 from '../../Documents/Forms/LCP/1 LCP.pdf';
+import LCP2 from '../../Documents/Forms/LCP/2 LCP.pdf';
+import LCP3 from '../../Documents/Forms/LCP/3 LCP.pdf';
+import LCP4 from '../../Documents/Forms/LCP/4 LCP.pdf';
+import Glock421 from '../../Documents/Forms/Glock42/1 Glock42.pdf';
+import Glock422 from '../../Documents/Forms/Glock42/2 Glock42.pdf';
+import Glock423 from '../../Documents/Forms/Glock42/3 Glock42.pdf';
+import Glock424 from '../../Documents/Forms/Glock42/4 Glock42.pdf';
+import P3AT1 from '../../Documents/Forms/P3AT/1 P3AT.pdf';
+import P3AT2 from '../../Documents/Forms/P3AT/2 P3AT.pdf';
+import P3AT3 from '../../Documents/Forms/P3AT/3 P3AT.pdf';
+import P3AT4 from '../../Documents/Forms/P3AT/4 P3AT.pdf';
+
 
 const FormsLinks = () => (
 	<div className="mw7 tj center flex justify-around">
@@ -15,9 +28,9 @@ const FormsLinks = () => (
 						{'Form 1 Individual Exempt¹'}
 					</p>
 					<div className="flex">
-						<a className="mh2 f4-l f5-m f6 black grow pointer link underline" href="https://www.dropbox.com/s/p0tiqq19f1actza/Form1%20Individual%20LCP%20Exempt.pdf?dl=0">LCP</a>
-						<a className="mh2 f4-l f5-m f6 black grow pointer link underline" href="https://www.dropbox.com/s/tn951jamviq2mi7/Form1%20Individual%20Glock42%20Exempt.pdf?dl=0">Glock42</a>
-						<a className="mh2 f4-l f5-m f6 black grow pointer link underline" href="https://www.dropbox.com/s/krr17rt1myiy7l2/Form1%20Individual%20P3AT%20Exempt.pdf?dl=0">P3AT</a>
+						<a className="mh2 f4-l f5-m f6 black grow pointer link underline" href={LCP1} target="_blank" rel="noopener noreferrer">LCP</a>
+						<a className="mh2 f4-l f5-m f6 black grow pointer link underline" href={Glock421} target="_blank" rel="noopener noreferrer">Glock42</a>
+						<a className="mh2 f4-l f5-m f6 black grow pointer link underline" href={P3AT1} target="_blank" rel="noopener noreferrer">P3AT</a>
 					</div>
 				</li>
 				<li>
@@ -25,9 +38,9 @@ const FormsLinks = () => (
 						{'Form 1 Individual Non-Exempt²'}
 					</p>
 					<div className="flex">
-						<a className="mh2 f4-l f5-m f6 black grow pointer link underline" href="https://www.dropbox.com/s/w34gzpwq4n6wjy9/Form1%20Individual%20LCP%20non-exempt.pdf?dl=0">LCP</a>
-						<a className="mh2 f4-l f5-m f6 black grow pointer link underline" href="https://www.dropbox.com/s/5jkoz3l405vsz63/Form1%20Individual%20Glock42%20Non-Exempt.pdf?dl=0">Glock42</a>
-						<a className="mh2 f4-l f5-m f6 black grow pointer link underline" href="https://www.dropbox.com/s/4icr0t6q8dw6dek/Form1%20Individual%20P3AT%20Non-Exempt.pdf?dl=0">P3AT</a>
+						<a className="mh2 f4-l f5-m f6 black grow pointer link underline" href={LCP2} target="_blank" rel="noopener noreferrer">LCP</a>
+						<a className="mh2 f4-l f5-m f6 black grow pointer link underline" href={Glock422} target="_blank" rel="noopener noreferrer">Glock42</a>
+						<a className="mh2 f4-l f5-m f6 black grow pointer link underline" href={P3AT2} target="_blank" rel="noopener noreferrer">P3AT</a>
 					</div>
 				</li>
 				<li>
@@ -35,9 +48,9 @@ const FormsLinks = () => (
 						{'Form 1 Trust Exempt'}
 					</p>
 					<div className="flex">
-						<a className="mh2 f4-l f5-m f6 black grow pointer link underline" href="https://www.dropbox.com/s/upc36q3owri20j8/Form1%20Trust%20LCP%20Exempt.pdf?dl=0">LCP</a>
-						<a className="mh2 f4-l f5-m f6 black grow pointer link underline" href="https://www.dropbox.com/s/36qr94433kjrsed/Form1%20Trust%20Glock42%20Exempt.pdf?dl=0">Glock42</a>
-						<a className="mh2 f4-l f5-m f6 black grow pointer link underline" href="https://www.dropbox.com/s/0x8j30bxvuuh7ss/Form1%20Trust%20P3AT%20Exempt.pdf?dl=0">P3AT</a>
+						<a className="mh2 f4-l f5-m f6 black grow pointer link underline" href={LCP3} target="_blank" rel="noopener noreferrer">LCP</a>
+						<a className="mh2 f4-l f5-m f6 black grow pointer link underline" href={Glock423} target="_blank" rel="noopener noreferrer">Glock42</a>
+						<a className="mh2 f4-l f5-m f6 black grow pointer link underline" href={P3AT3} target="_blank" rel="noopener noreferrer">P3AT</a>
 					</div>
 				</li>
 				<li>
@@ -45,9 +58,9 @@ const FormsLinks = () => (
 						{'Form 1 Trust Non-Exempt'}
 					</p>
 					<div className="flex">
-						<a className="mh2 f4-l f5-m f6 black grow pointer link underline" href="https://www.dropbox.com/s/axqbnq99qt7ajll/Form1%20Trust%20LCP%20non-exempt.pdf?dl=0">LCP</a>
-						<a className="mh2 f4-l f5-m f6 black grow pointer link underline" href="https://www.dropbox.com/s/h1viy2z8u17jhgr/Form1%20Trust%20Glock42%20Non-Exempt.pdf?dl=0">Glock42</a>
-						<a className="mh2 f4-l f5-m f6 black grow pointer link underline" href="https://www.dropbox.com/s/6354skbqj3mlrp9/Form1%20Trust%20P3AT%20Non-Exempt.pdf?dl=0">P3AT</a>
+						<a className="mh2 f4-l f5-m f6 black grow pointer link underline" href={LCP4} target="_blank" rel="noopener noreferrer">LCP</a>
+						<a className="mh2 f4-l f5-m f6 black grow pointer link underline" href={Glock424} target="_blank" rel="noopener noreferrer">Glock42</a>
+						<a className="mh2 f4-l f5-m f6 black grow pointer link underline" href={P3AT4} target="_blank" rel="noopener noreferrer">P3AT</a>
 					</div>
 				</li>
 			</ul>
