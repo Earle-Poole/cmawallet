@@ -36,9 +36,7 @@ class App extends Component {
 		case 'home':
 			return (
 				<div>
-					<Popup
-						onInputChange={this.onInputChange}
-					/>
+					<Popup />
 					<Home />
 				</div>
 			);
