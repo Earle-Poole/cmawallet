@@ -13,7 +13,7 @@ const ContactUs = () => (
 				</a>
 			</p>
 		</div>
-		<div className="nowrap ph5">
+		<div className="nowrap mh4">
 			<p className="mb5 f3 underline center">
 				{'Phone'}
 			</p>

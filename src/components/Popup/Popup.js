@@ -15,7 +15,7 @@ if (submittedPopup === null) { window.localStorage.setItem('submittedPopup', '0'
 submittedPopup = window.localStorage.getItem('submittedPopup');
 
 // Get this from the form's URL. Must add "/post" after "/subscribe"
-const url = 'https://udsterleads.us10.list-manage.com/subscribe/post?u=c97ea1160f134dbeb8cbe8bd6&id=66c6445cca';
+const url = 'https://cmawallets.us20.list-manage.com/subscribe/post?u=9856594bb04906398cf582727&id=a40c7a0b35';
 
 const simpleForm = () => (
 	<MailchimpSubscribe

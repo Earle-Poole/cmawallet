@@ -13,8 +13,8 @@ const LEOMilitary = () => (
 			<a className="black underline pointer dim" href="mailto:questions@cmawallets.com">
 				{' questions@cmawallets.com' }
 			</a>
-				with a copy of your ID (please cover over all information except your service type and
-				name) along with a copy of the receipt. We will then issue a $10 refund.
+			{` with a copy of your ID (please cover over all information except your service type and
+			name) along with a copy of the receipt. We will then issue a $10 refund.`}
 			<br />
 			<br />
 			<ul className="tl f6 f5-l">

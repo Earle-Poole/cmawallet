@@ -34,16 +34,15 @@ const Home = () => {
 	];
 
 	return (
-		<div style={{ width: '45%', height: 'auto' }} className="center">
-			<a href="https://shoppy.gg/product/hfRLCkS" className="black" target="_blank" rel="noopener noreferrer">
-				<ImageGallery
-					items={images}
-					showFullscreenButton={false}
-					autoPlay
-					slideDuration={700}
-					lazyLoad={false}
-				/>
-			</a>
+		<div style={{ width: '45%', height: 'auto' }} className="center pointe">
+			<ImageGallery
+				items={images}
+				showFullscreenButton={false}
+				autoPlay
+				onClick={() => window.open('https://shoppy.gg/product/hfRLCkS', '_blank')}
+				slideDuration={700}
+				lazyLoad={false}
+			/>
 		</div>
 	);
 };
