@@ -7,13 +7,13 @@ import './Navigation.css';
 const Navigation = ({ onRouteChange }) => (
 	<div id="navigation-bg">
 		<nav className="bb bt mw8 mb4 center flex-wrap">
-			<p onKeyPress={null} onClick={() => onRouteChange('home')} className="link pointer underline bg-animate hover-bg-black-10 pa2-m pa3-l ma1 b f7 f6-m f5-l">Home</p>
-			<p onKeyPress={null} onClick={() => onRouteChange('leomilitary')} className="link pointer underline bg-animate hover-bg-black-10 pa2-m pa3-l ma1 b f7 f6-m f5-l">LEO/Military</p>
-			<p onKeyPress={null} onClick={() => onRouteChange('safetyuse')} className="link pointer underline bg-animate hover-bg-black-10 pa2-m pa3-l ma1 b f7 f6-m f5-l">Safety & Use</p>
-			<p className="link pointer underline bg-animate hover-bg-black-10 pa2-m pa3-l ma1 b f7 f6-m f5-l"><a href="https://shoppy.gg/product/hfRLCkS" className="black" target="_blank" rel="noopener noreferrer">Where to buy</a></p>
-			<p onKeyPress={null} onClick={() => onRouteChange('formslinks')} className="link pointer underline bg-animate hover-bg-black-10 pa2-m pa3-l ma1 b f7 f6-m f5-l">Forms & Links</p>
-			<p onKeyPress={null} onClick={() => onRouteChange('scenarios')} className="link pointer underline bg-animate hover-bg-black-10 pa2-m pa3-l ma1 b f7 f6-m f5-l">Scenarios</p>
-			<p onKeyPress={null} onClick={() => onRouteChange('productdesign')} className="link pointer underline bg-animate hover-bg-black-10 pa2-m pa3-l ma1 b f7 f6-m f5-l">Product Design</p>
+			<p onKeyPress={null} onClick={() => onRouteChange('home')} className="link pointer underline bg-animate hover-bg-black-10 pa0 pa1-m pa2-l ma1 ma2-m ma3-l b f6 f5-m f4-l">Home</p>
+			<p onKeyPress={null} onClick={() => onRouteChange('leomilitary')} className="link pointer underline bg-animate hover-bg-black-10 pa0 pa1-m pa2-l ma1 ma2-m ma3-l b f6 f5-m f4-l">LEO/Military</p>
+			<p onKeyPress={null} onClick={() => onRouteChange('safetyuse')} className="link pointer underline bg-animate hover-bg-black-10 pa0 pa1-m pa2-l ma1 ma2-m ma3-l b f6 f5-m f4-l">Safety & Use</p>
+			<p className="link pointer underline bg-animate hover-bg-black-10 pa0 pa1-m pa2-l ma1 ma2-m ma3-l b f6 f5-m f4-l"><a href="https://shoppy.gg/product/hfRLCkS" className="black" target="_blank" rel="noopener noreferrer">Buy It Now</a></p>
+			<p onKeyPress={null} onClick={() => onRouteChange('formslinks')} className="link pointer underline bg-animate hover-bg-black-10 pa0 pa1-m pa2-l ma1 ma2-m ma3-l b f6 f5-m f4-l">Forms & Links</p>
+			<p onKeyPress={null} onClick={() => onRouteChange('scenarios')} className="link pointer underline bg-animate hover-bg-black-10 pa0 pa1-m pa2-l ma1 ma2-m ma3-l b f6 f5-m f4-l">Scenarios</p>
+			<p onKeyPress={null} onClick={() => onRouteChange('compatibilitylist')} className="link pointer underline bg-animate hover-bg-black-10 pa0 pa1-m pa2-l ma1 ma2-m ma3-l b f6 f5-m f4-l">Compatibility List</p>
 		</nav>
 	</div>
 );

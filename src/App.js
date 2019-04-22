@@ -11,11 +11,11 @@ import LEOMilitary from './components/LEOMilitary/LEOMilitary';
 import SafetyUse from './components/SafetyUse/SafetyUse';
 import ProductDesign from './components/ProductDesign/ProductDesign';
 import FormsLinks from './components/FormsLinks/FormsLinks';
-import WhereToBuy from './components/WhereToBuy/WhereToBuy';
 import TermsAndConditions from './components/TermsAndConditions/TermsAndConditions';
 import ContactUs from './components/ContactUs/ContactUs';
 import Scenarios from './components/Scenarios/Scenarios';
 import Blog from './components/Blog/Blog';
+import CompatibilityList from './components/CompatabilityList/CompatibilityList';
 import './App.css';
 import 'tachyons';
 
@@ -58,10 +58,6 @@ class App extends Component {
 			return (
 				<FormsLinks />
 			);
-		case 'wheretobuy':
-			return (
-				<WhereToBuy />
-			);
 		case 'termsandconditions':
 			return (
 				<TermsAndConditions />
@@ -77,6 +73,10 @@ class App extends Component {
 		case 'blog':
 			return (
 				<Blog />
+			);
+		case 'compatibilitylist':
+			return (
+				<CompatibilityList />
 			);
 		default:
 			return null;
